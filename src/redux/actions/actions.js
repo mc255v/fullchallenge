@@ -8,7 +8,7 @@ import {
   CREATE_EMPLOYEE,
 } from './type';
 
-axios.defaults.baseURL = `${process.env.BASE_URL ||
+axios.defaults.baseURL = `${process.env.REACT_APP_BASE_URL ||
   'http://localhost:5000'}/api`;
 
 // LOGIN
@@ -22,6 +22,9 @@ export const setAuthType = authType => {
 
 // EMPLOYEE LIST
 export const getEmployeeList = () => {
+  console.log(
+    `${process.env.REACT_APP_BASE_URL || 'http://localhost:5000'}/api`,
+  );
   return async dispatch => {
     try {
       dispatch({ type: EMPLOYEE_LIST_FETCH });
