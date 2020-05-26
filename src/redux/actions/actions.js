@@ -8,7 +8,8 @@ import {
   CREATE_EMPLOYEE,
 } from './type';
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = `${process.env.BASE_URL ||
+  'http://localhost:5000'}/api`;
 
 // LOGIN
 export const setAuthType = authType => {
