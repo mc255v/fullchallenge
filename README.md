@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Create a new MySQL database and configure a .env file with the parameters seen in '/server/config.js'
+MySQL database .env parameters can be seen in '/server/config.js'
 
 After database creation:
 
@@ -298,6 +298,7 @@ Returned
 - Bootstrap
 - React-Bootstrap
 - Axios
+- Styled Components
 
 ### Back-end
 
@@ -313,3 +314,5 @@ Returned
 - Nodemon
 - Mocha
 - Chai
+- ESLint
+- Prettier
