@@ -1,0 +1,75 @@
+{
+  "name": "matthew-cook-paypay",
+  "author": "Matthew Cook",
+  "version": "0.1.0",
+  "description": "Fullstack Engineer Challenge",
+  "private": true,
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "nodemon server/index.js",
+    "makemigration": "knex migrate:make --knexfile server/models/knexfile.js",
+    "migrate": "knex migrate:latest --knexfile server/models/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile server/models/knexfile.js",
+    "seed": "node server/data/import_employees.js && node server/data/import_reviews.js && node server/data/import_feedback.js",
+    "database": "yarn migrate && yarn seed",
+    "start": "yarn serve & yarn dev"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.19.5",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.0",
+    "thunk": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-only-warn": "^1.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "prettier": "1.18.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

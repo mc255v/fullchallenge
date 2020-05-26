@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "plugins": ["react", "only-warn", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "camelcase": [0],
+    "react/jsx-filename-extension": [
+      2, 
+      { 
+          "extensions": [".js"] 
+      }
+    ],
+    "react/prop-types": [
+      0
+    ]
+  }
+}

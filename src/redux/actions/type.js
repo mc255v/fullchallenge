@@ -1,0 +1,9 @@
+// Login
+export const SET_AUTH_TYPE = 'SET_AUTH_TYPE';
+
+// Employee List
+export const EMPLOYEE_LIST_FETCH = 'EMPLOYEE_LIST_FETCH';
+export const SET_EMPLOYEE_LIST = 'SET_EMPLOYEE_LIST;';
+export const EMPLOYEE_FETCH = 'EMPLOYEE_FETCH';
+export const SET_SELECTED_EMPLOYEE = 'SET_SELECTED_EMPLOYEE';
+export const CREATE_EMPLOYEE = 'CREATE_EMPLOYEE';
