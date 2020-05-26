@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = `${process.env.REACT_APP_BASE_URL ||
+  'http://localhost:5000'}/api`;
 
 const modalFeedbackTable = async employeeID => {
   const body = await axios.post('/employees/custom/list', {
